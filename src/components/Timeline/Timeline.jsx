@@ -60,6 +60,7 @@ const Timeline = () => {
       </div>
       <div className="big-box">
         <div className="main-line">
+          <div className="ball2-outer"></div>
           <div className="curved-line"></div>
           <div className="verti-line"></div>
           <div className="ball1" id="ball1"></div>

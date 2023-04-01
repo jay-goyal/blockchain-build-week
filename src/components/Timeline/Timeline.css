@@ -177,7 +177,7 @@
   border-radius: 50%;
   width: 64px;
   height: 64px;
-  z-index: -1;
+  /* z-index: -1; */
   background-color: white;
   opacity: 0.3;
   position: absolute;
@@ -201,7 +201,7 @@
   border-radius: 50%;
   width: 64px;
   height: 64px;
-  z-index: -1;
+  /* z-index: -1; */
   background-color: white;
   opacity: 0.3;
   position: absolute;
@@ -225,7 +225,7 @@
   border-radius: 50%;
   width: 64px;
   height: 64px;
-  z-index: -1;
+  /* z-index: -1; */
   background-color: white;
   opacity: 0.3;
   position: absolute;
