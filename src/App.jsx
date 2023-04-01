@@ -1,9 +1,11 @@
 import React from "react";
-import Lander from "./Components/Lander";
+import "./index.css";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
   return (
     <div className="App">
+      <Timeline />
       <Lander />
     </div>
   );
