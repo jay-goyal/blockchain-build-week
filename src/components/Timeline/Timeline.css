@@ -1,13 +1,16 @@
 .timeline {
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-top: 800px;
+  background-color: transparent;
+  /* background-color: pink; */
 }
 
 .big-box {
-  border: 1px solid #79f9ba;
+  border: 1.5px solid #79f9ba;
   font-family: "Manrope";
   border-radius: 48px;
   /* position: absolute; */
@@ -29,8 +32,9 @@
 }
 
 .headline {
-  background-color: black;
   font-family: "Manrope", sans-serif;
+  /* background-color: transparent; */
+  /* background-color: pink; */
   /* position: absolute; */
   /* width: 268px;
   height: 80px;
@@ -54,7 +58,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
+  /* text-fill-colour: transparent; */
 }
 
 .leftArrow {
@@ -63,7 +67,8 @@
   /* margin: 4 0 4 0; */
   width: 75px;
   height: 75px;
-  background-color: gray;
+  background-color: black;
+  /* background-color: transparent; */
 }
 
 .leftArrow:hover {
@@ -75,7 +80,7 @@
   margin-left: 50px;
   width: 75px;
   height: 75px;
-  background-color: gray;
+  background-color: black;
   padding: auto;
 }
 
@@ -104,17 +109,20 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
+  background-color: transparent;
 }
 
 .card {
   margin: 4px;
   padding: 4px;
+  background-color: transparent;
 }
 
 .new-card {
   margin: 4px;
   padding: 4px;
   transform: scale(1.01);
+  background-color: transparent;
 }
 
 .card-body {
@@ -126,13 +134,16 @@
   opacity: 0.45;
   letter-spacing: -0.3px;
   font-weight: 400;
+  background-color: transparent;
 }
 .cards {
   display: flex;
+  background-color: transparent;
 }
 
 .curtain {
   display: flex;
+  background-color: transparent;
 }
 
 .main-line {
@@ -151,14 +162,15 @@
   border-left: 1.5px solid white;
   position: absolute;
   left: 6.5%;
+  background-color: transparent;
 }
 
 .verti-line {
   position: absolute;
   border-left: 1.5px solid white;
-  height: 65px;
+  height: 150px;
   left: 6.5%;
-  top: 66.5%;
+  top: 34%;
 }
 
 .ball1 {
@@ -169,7 +181,7 @@
   z-index: 2;
   background-color: white;
   /* left: 50px; */
-  top: 78%;
+  top: 50%;
   left: 5.9%;
 }
 
@@ -181,7 +193,7 @@
   background-color: white;
   opacity: 0.3;
   position: absolute;
-  top: 75.25%;
+  top: 47.5%;
   left: 4.5%;
 }
 
@@ -193,7 +205,7 @@
   z-index: 2;
   background-color: white;
   /* left: 50px; */
-  top: 55%;
+  top: 25%;
   left: 38%;
 }
 
@@ -205,7 +217,7 @@
   background-color: white;
   opacity: 0.3;
   position: absolute;
-  top: 52%;
+  top: 22.5%;
   left: 36.6%;
 }
 
@@ -217,7 +229,7 @@
   z-index: 2;
   background-color: white;
   /* left: 50px; */
-  top: 54.8%;
+  top: 25%;
   left: 63%;
 }
 
@@ -229,7 +241,7 @@
   background-color: white;
   opacity: 0.3;
   position: absolute;
-  top: 52%;
+  top: 22.5%;
   left: 61.6%;
 }
 
@@ -238,6 +250,7 @@
   position: relative;
   margin-left: 56px;
   top: 2%;
+  background-color: transparent;
   /* margin: 4rem;
   margin-top: 4rem; */
   /* padding: auto; */
@@ -248,6 +261,7 @@
   top: 52%;
   left: 70%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
 }
 
 .card:hover {
@@ -257,13 +271,16 @@
 @media only screen and (max-width: 600px) {
   .headline {
     font-size: 32px;
+    background-color: transparent;
   }
   .main-line {
     display: none;
+    background-color: transparent;
   }
   .cards {
     display: flex;
     flex-direction: column;
+    background-color: transparent;
   }
   .curtain {
     display: flex;
