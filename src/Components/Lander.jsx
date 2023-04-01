@@ -1,16 +1,30 @@
 import React from "react";
 import "../CSS/Lander.css";
+import { useState } from "react";
+import Countdown from "./Countdown";
 
 export default function Lander() {
-  return <div className="LanderCont">
-        {/* <img src="/globe.png" alt="globe" className="LanderGlobe" /> */}
-        <img src="/logo.svg" alt="BITS Blockchain Logo" className="LanderLogo" />
-        <h1 className="LanderTitle">build week</h1>
-        <a href="#" className="LanderBtn">
-           START BUILDING 
+  const [isCount, setIsCount] = useState(false);
+
+  return (
+    <div className="LanderCont">
+      {/* <img src="/globe.png" alt="globe" className="LanderGlobe" /> */}
+      <img src="/logo.svg" alt="BITS Blockchain Logo" className="LanderLogo" />
+      <h1 className="LanderTitle">build week</h1>
+      {isCount ? (
+        <Countdown />
+      ) : (
+        <a href="#" className="LanderBtn" onClick={() => setIsCount(true)}>
+          START BUILDING
         </a>
-        <img src="/ringLeft.png" alt="bg ring" className="LanderRing ringLeft" />
-        <img src="/ringRight.png" alt="bg ring" className="LanderRing ringRight" />
-        <div className="LanderFade" />
+      )}
+      <img src="/ringLeft.png" alt="bg ring" className="LanderRing ringLeft" />
+      <img
+        src="/ringRight.png"
+        alt="bg ring"
+        className="LanderRing ringRight"
+      />
+      <div className="LanderFade" />
     </div>
+  );
 }

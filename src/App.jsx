@@ -1,15 +1,15 @@
 import React from "react";
 import "./index.css";
-import Timeline from "./components/Timeline/Timeline";
+/* import Timeline from "./Components/Timeline"; */
 import Lander from "./Components/Lander";
-import AboutUs from "./components/About us/AboutUs";
+/* import AboutUs from "./Components/AboutUs"; */
 
 function App() {
   return (
     <div className="App">
       <Lander />
-      <AboutUs />
-      <Timeline />
+      {/* <AboutUs /> */}
+      {/* <Timeline /> */}
     </div>
   );
 }

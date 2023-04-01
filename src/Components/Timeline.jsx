@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@material-ui/icons";
-import "./Timeline.css";
+import "../CSS/Timeline.css";
 
 const Timeline = () => {
   const [bulb, setBulb] = useState(0);
