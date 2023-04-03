@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Vite App</title>
     </head>
-    <body class="text-manrope w-screen">
+    <body class="text-manrope w-screen overflow-x-hidden">
         <div class="h-max w-full absolute z-30">
             <div
                 class="flex flex-row gap-2 md:gap-6 lg:gap-16 justify-center my-2"
@@ -30,7 +30,7 @@
         <!-- Landing section -->
         <div
             id="app"
-            class="h-screen w-full bg-neutral-900 grid place-items-center relative overflow-hidden z-20"
+            class="h-screen w-full bg-neutral-900 grid place-items-center relative overflow-y-visible"
         >
             <div class="flex flex-col gap-8 text-center">
                 <h1 class="text-gray-100 font-extrabold text-4xl text-blanka">
@@ -48,10 +48,10 @@
             <!-- Shadows -->
 
             <div
-                class="-z-10 h-px w-px after:absolute after:h-72 blur-3xl after:w-72 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-green-600 absolute shadow-right opacity-50"
+                class="z-10 h-px w-px after:absolute after:h-72 blur-3xl after:w-72 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-green-600 absolute shadow-right opacity-50"
             ></div>
             <div
-                class="-z-10 h-px w-px after:absolute after:h-72 blur-3xl after:w-72 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-green-600 absolute shadow-left opacity-50"
+                class="z-10 h-px w-px after:absolute after:h-72 blur-3xl after:w-72 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-green-600 absolute shadow-left opacity-50"
             ></div>
         </div>
         <!-- <script type="module" src="/main.js"></script> -->
