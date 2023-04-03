@@ -1,4 +1,4 @@
-.dome h2 {
+.spons-dome h2 {
   background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -9,26 +9,30 @@
   font-weight: 600;
   font-size: 68px;
   line-height: 80px;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
-.container {
+.spons-container {
   background-color: black;
   width: 100%;
-  height: 400px;
+  height: 1000px;
   overflow: hidden;
   text-align: center;
   margin: 0;
+  padding-top: 20px;
   display: flex;
   flex-direction: columns;
   justify-content: center;
 }
 
-.dome {
+.spons-dome {
   margin: auto;
   background: linear-gradient(
     to bottom,
-    rgba(102, 205, 104, 0.19) 0.2%,
-    rgba(255, 255, 255, 0) 40%
+    rgba(102, 205, 104, 0.19) 0%,
+    rgba(255, 255, 255, 0) 20%
   );
+
   width: 90vw;
   padding-top: 50px;
   border-radius: 100%;
@@ -37,35 +41,54 @@
   border-right: 0px;
 }
 
-.about-us-description {
-  margin: auto;
+.spons-dome h3 {
   background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 800px;
-  height: 500px;
-  text-align: center;
-  margin-top: 70px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-size: 22px;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
   line-height: 40px;
-  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.sponsor img {
+  height: 95px;
+  width: 120px;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.sponsor h4 {
+  color: white;
+  padding-top: 20px;
 }
 
 @media (max-width: 800px) {
-  .dome {
+  .spons-dome {
     width: 80vw;
+    margin: 0;
   }
-  .about-us-description {
-    width: 400px;
-    height: 150px;
-    font-size: 15px;
-    margin-top: 30px;
-    line-height: 20px;
-  }
-  .dome h2 {
+
+  .spons-dome h2 {
     font-size: 40px;
     line-height: 50px;
+    margin-top: 0;
+  }
+
+  .spons-dome h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .spons-container {
+    height: 925px;
   }
 }

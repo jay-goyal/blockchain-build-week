@@ -9,7 +9,7 @@ const AboutUs = () => {
         <p className="about-us-description">
           We are a group of blockchain enthusiasts that have banded together to
           form a community of developers, innovators, and creators that strive
-          to better themselves every day and have fun while building cool stuff
+          to better themselves every day and have fun while building cool stuff.{" "}
         </p>
       </div>
     </div>

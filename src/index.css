@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Manrope:wght@400;500;600&display=swap");
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -13,7 +13,7 @@ html {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   color: white;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -24,3 +24,22 @@ html {
 a {
   text-decoration: none;
 }
+
+section {
+  margin: 200px 0;
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  section {
+    margin: 100px 0;
+  }
+}
+
