@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Manrope:wght@400;500;600&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
 * {
   --blue: #238cdb;
   --green: #79f9ba;
