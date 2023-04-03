@@ -14,7 +14,7 @@ export default function Lander() {
       {isCount ? (
         <Countdown />
       ) : (
-        <a href="#" className="LanderBtn" onClick={() => setIsCount(true)}>
+        <a href="https://forms.gle/hmxdeMrsKdgSeQHY9" className="LanderBtn"}>
           START BUILDING
         </a>
       )}
