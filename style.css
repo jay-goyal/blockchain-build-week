@@ -73,3 +73,12 @@
 .shadow-right {
     animation: rightGlow infinite 10s;
 }
+
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

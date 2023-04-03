@@ -7,23 +7,39 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Vite App</title>
     </head>
-    <body class="text-manrope w-screen overflow-x-hidden">
+    <body class="text-manrope w-screen overflow-x-hidden bg-neutral-900">
+        <div
+            id="scroller"
+            class="h-1 top-0 sticky max-w-full z-50 bg-green-400"
+        ></div>
         <div class="h-max w-full absolute z-30">
             <div
                 class="flex flex-row gap-2 md:gap-6 lg:gap-16 justify-center my-2"
             >
-                <a href="#about" class="px-4 py-2 -mx-2 rounded  text-neutral-50">
+                <div
+                    onclick="lenis.scrollTo('#about')"
+                    class="px-4 py-2 -mx-2 rounded text-neutral-50"
+                >
                     About
-                </a>
-                <a href="#timeline" class="px-4 py-2 -mx-2 rounded  text-neutral-50">
+                </div>
+                <div
+                    onclick="lenis.scrollTo('#timeline')"
+                    class="px-4 py-2 -mx-2 rounded text-neutral-50"
+                >
                     Timeline
-                </a>
-                <a href="#about" class="px-4 py-2 -mx-2 rounded  text-neutral-50">
+                </div>
+                <div
+                    onclick="lenis.scrollTo('#about')"
+                    class="px-4 py-2 -mx-2 rounded text-neutral-50"
+                >
                     Buidl Week
-                </a>
-                <a href="#about" class="px-4 py-2 -mx-2 rounded  text-neutral-50">
+                </div>
+                <div
+                    onclick="lenis.scrollTo('#about')"
+                    class="px-4 py-2 -mx-2 rounded text-neutral-50"
+                >
                     Hackathon
-                </a>
+                </div>
             </div>
         </div>
 
@@ -64,8 +80,8 @@
             <div class="flex flex-col gap-4 text-center z-20">
                 <h2 class="text-gray-100 font-extrabold text-4xl">About us</h2>
                 <div class="p-4 text-white">
-                    We are a group of extremely motivated students and we aim to
-                    grow the general interest of Web3 to the next level :)
+                    We are div group of extremely motivated students and we aim
+                    to grow the general interest of Web3 to the next level :)
                 </div>
             </div>
             <div
@@ -119,5 +135,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/kursor@0.1.6/dist/kursor.js"></script>
+        <script src="./main.js" type="module"></script>
     </body>
 </html>
