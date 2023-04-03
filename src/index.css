@@ -36,3 +36,10 @@ section:first-of-type {
 section:last-of-type {
   margin-bottom: 0;
 }
+
+@media (max-width: 800px) {
+  section {
+    margin: 100px 0;
+  }
+}
+
