@@ -1,20 +1,23 @@
 import React from "react";
 import "./index.css";
-import Timeline from "./Components/Timeline";
+/* import Timeline from "./Components/Timeline"; */
 import Lander from "./Components/Lander";
 import Nav from "./Components/Nav";
 import AboutUs from "./Components/AboutUs";
+import Sponz from "./Components/Sponz";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useState } from "react";
 
 function App() {
   const opts = { threshold: 0.6 };
-  const elems = { Home: "Lander", "About Us": "AboutUs", Timeline: "Timeline" };
+  const elems = { Home: "Lander", "About Us": "AboutUs", Sponsors: "Sponz" };
   const [landerRef, landerInView, landerEntry] = useInView(opts);
   const [aboutRef, aboutInView, aboutEntry] = useInView(opts);
-  const [timelineRef, timelineInView, timelineEntry] = useInView(opts);
+  const [sponzRef, sponzInView, sponzEntry] = useInView(opts);
+  /* const [timelineRef, timelineInView, timelineEntry] = useInView(opts); */
   const [elemShow, setElemShow] = useState(0);
+
   useEffect(() => {
     let active = 0;
     if (landerEntry?.isIntersecting) {
@@ -23,17 +26,22 @@ function App() {
     if (aboutEntry?.isIntersecting) {
       active = 1;
     }
-    if (timelineEntry?.isIntersecting) {
+    if (sponzEntry?.isIntersecting) {
       active = 2;
     }
+    /* if (timelineEntry?.isIntersecting) { */
+    /*   active = 2; */
+    /* } */
     if (elemShow != active) {
       setElemShow(active);
     }
   }, [
     landerEntry?.isIntersecting,
     aboutEntry?.isIntersecting,
-    timelineEntry?.isIntersecting,
+    sponzEntry?.isIntersecting,
+    /* timelineEntry?.isIntersecting, */
   ]);
+
   return (
     <div className="App">
       <Nav active={elemShow} elems={elems} />
@@ -43,9 +51,12 @@ function App() {
       <section id="AboutUs" ref={aboutRef}>
         <AboutUs />
       </section>
-      <section id="Timeline" ref={timelineRef}>
-        <Timeline />
+      <section id="Sponz" ref={sponzRef}>
+        <Sponz />
       </section>
+      {/* <section id="Timeline" ref={timelineRef}> */}
+      {/*   <Timeline /> */}
+      {/* </section> */}
     </div>
   );
 }
