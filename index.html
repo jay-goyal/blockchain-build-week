@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Vite App</title>
     </head>
-    <body class="text-manrope">
-        <div class="h-max w-screen absolute z-20">
+    <body class="text-manrope w-screen">
+        <div class="h-max w-full absolute z-20">
             <div
                 class="flex flex-row gap-2 md:gap-6 lg:gap-8 justify-center my-2"
             >
@@ -33,7 +33,7 @@
         <!-- Landing section -->
         <div
             id="app"
-            class="h-[100dvh] w-screen bg-neutral-900 grid place-items-center relative overflow-hidden z-20"
+            class="h-screen w-full bg-neutral-900 grid place-items-center relative overflow-hidden z-20"
         >
             <div class="flex flex-col gap-8 text-center">
                 <h1 class="text-gray-100 font-extrabold text-4xl text-blanka">
@@ -61,7 +61,7 @@
 
         <!-- About us -->
         <div
-            class="h-[100dvh] w-screen bg-neutral-900 grid place-items-center relative"
+            class="h-screen w-full bg-neutral-900 grid place-items-center relative"
         >
             <div class="flex flex-col gap-4 text-center z-20">
                 <h2 class="text-gray-100 font-extrabold text-4xl">About us</h2>
@@ -79,14 +79,26 @@
         </div>
 
         <!-- Timeline -->
-        <div class="h-[100dvh] w-screen bg-neutral-900 grid place-items-center">
+        <div class="h-screen w-screen bg-neutral-900 grid place-items-center">
             <h2 class="text-gray-100 font-extrabold text-4xl">Timeline</h2>
-            <div class="flex flex-row text-left justify-center">
+            <div class="flex flex-col md:flex-row text-left justify-center">
                 <div
-                    class="px-4 py-6 text-gray-400 max-w-xs border-t-2 border-gray-500"
+                    class="px-4 py-6 text-gray-400 max-w-xs border-gray-500 border-l-2 border-t-0 md:border-l-0 md:border-t-2"
                 >
                     <span
-                        class="bg-gray-500 px-2 text-gray-50 py-1 rounded-t-xl rounded-r-xl font-bold text-xl relative after:absolute after:rounded-xl after:w-4 after:h-4 after:bg-white after:left-0 after:-top-[31px] border-top-2"
+                        class="bg-gray-500 px-2 text-gray-50 py-1 rounded-t-xl rounded-r-xl font-bold text-xl relative after:absolute after:rounded-xl after:w-4 after:h-4 after:bg-white after:-left-[25px] after:top-[10px] md:after:left-0 md:after:-top-[31px] "
+                        >Title</span
+                    >
+
+                    <div class="h-2"></div>
+                    We are a group of extremely motivated students and we aim to
+                    grow the general interest of Web3 to the next level :)
+                </div>
+                <div
+                    class="px-4 py-6 text-gray-400 max-w-xs border-gray-500 border-l-2 border-t-0 md:border-l-0 md:border-t-2"
+                >
+                    <span
+                        class="bg-gray-500 px-2 text-gray-50 py-1 rounded-t-xl rounded-r-xl font-bold text-xl relative after:absolute after:rounded-xl after:w-4 after:h-4 after:bg-white after:-left-[25px] after:top-[10px] md:after:left-0 md:after:-top-[31px]"
                         >Title</span
                     >
                     <div class="h-2"></div>
@@ -94,21 +106,10 @@
                     grow the general interest of Web3 to the next level :)
                 </div>
                 <div
-                    class="px-4 py-6 text-gray-400 max-w-xs border-t-2 border-gray-500"
+                    class="px-4 py-6 text-gray-400 max-w-xs border-gray-500 border-l-2 border-t-0 md:border-l-0 md:border-t-2"
                 >
                     <span
-                        class="bg-gray-500 px-2 text-gray-50 py-1 rounded-t-xl rounded-r-xl font-bold text-xl relative after:absolute after:rounded-xl after:w-4 after:h-4 after:bg-white after:left-0 after:-top-[31px] border-top-2"
-                        >Title</span
-                    >
-                    <div class="h-2"></div>
-                    We are a group of extremely motivated students and we aim to
-                    grow the general interest of Web3 to the next level :)
-                </div>
-                <div
-                    class="px-4 py-6 text-gray-400 max-w-xs border-t-2 border-gray-500"
-                >
-                    <span
-                        class="bg-gray-500 px-2 text-gray-50 py-1 rounded-t-xl rounded-r-xl font-bold text-xl relative after:absolute after:rounded-xl after:w-4 after:h-4 after:bg-white after:left-0 after:-top-[31px] border-top-2"
+                        class="bg-gray-500 px-2 text-gray-50 py-1 rounded-t-xl rounded-r-xl font-bold text-xl relative after:absolute after:rounded-xl after:w-4 after:h-4 after:bg-white after:-left-[25px] after:top-[10px] md:after:left-0 md:after:-top-[31px]"
                         >Title</span
                     >
                     <div class="h-2"></div>
