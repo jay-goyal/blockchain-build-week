@@ -70,8 +70,9 @@
 .LanderGlobe {
   position: absolute;
   right: -10%;
-  bottom: -25%;
+  bottom: -20%;
   z-index: 1;
+    width: 600px;
 }
 
 @media (max-width: 700px) {
@@ -93,4 +94,8 @@
   .LanderRing {
     width: 500px;
   }
+
+    .LanderGlobe {
+    display: none;
+    }
 }
