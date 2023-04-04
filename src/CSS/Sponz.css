@@ -15,7 +15,7 @@
 .spons-container {
   background-color: black;
   width: 100%;
-  height: 1000px;
+  height: 1300px;
   overflow: hidden;
   text-align: center;
   margin: 0;
@@ -71,6 +71,45 @@
   padding-top: 20px;
 }
 
+
+.track-partners{
+  display: flex;
+  flex-direction: row;
+  padding-left: 28vw;
+}
+
+.track-sponsor{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-right: 5vw;
+}
+
+.track-sponsor img {
+  height: 80px;
+  width: 120px;
+}
+
+.track-sponsor h4 {
+  color: white;
+  padding-top: 20px;
+}
+
+
+
+.devfolio{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  /* padding-right: 3vw; */
+}
+
+.devfolio img{
+  height: 150px;
+  width: 120px;
+}
+
+
 @media (max-width: 800px) {
   .spons-dome {
     width: 80vw;
@@ -89,6 +128,25 @@
   }
 
   .spons-container {
-    height: 925px;
+    height: 1500px;
   }
+
+  .track-partners{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .track-sponsor{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-right: 10px;
+  }
+
+  .track-sponsor img{
+    height: 50px;
+    width: 100px;
+  }
+  
 }
