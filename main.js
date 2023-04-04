@@ -1,5 +1,4 @@
 import Lenis from "@studio-freight/lenis"
-// import Kursor from "kursor"
 
 const lenis = new Lenis({
     smoothTouch: true,
@@ -13,7 +12,18 @@ const cursorBox = document.getElementById("cursorBox")
 const cursor = document.getElementById("cursor")
 scroller.style.width = "0%"
 
-document.body.onpointermove = (event) => {
+var button = document.getElementById("debounce")
+const debounce = (func, delay) => {
+    let debounceTimer
+    return function () {
+        const context = this
+        const args = arguments
+        clearTimeout(debounceTimer)
+        debounceTimer = setTimeout(() => func.apply(context, args), delay)
+    }
+}
+
+document.body.onpointermove = debounce((event) => {
     const { clientX, clientY } = event
     cursor.style.left = `${clientX}px`
     cursor.style.top = `${clientY}px`
@@ -24,9 +34,9 @@ document.body.onpointermove = (event) => {
         },
         { duration: 1000, fill: "forwards" }
     )
-}
+}, 10)
 
-document.body.onpointerdown = (_) => {
+document.body.onpointerdown = debounce((_) => {
     cursorBox.animate(
         {
             width: "24px",
@@ -34,9 +44,9 @@ document.body.onpointerdown = (_) => {
         },
         { duration: 100, fill: "forwards" }
     )
-}
+}, 50)
 
-document.body.onpointerup = (_) => {
+document.body.onpointerup = debounce((_) => {
     cursorBox.animate(
         {
             width: "32px",
@@ -44,7 +54,7 @@ document.body.onpointerup = (_) => {
         },
         { duration: 100, fill: "forwards" }
     )
-}
+}, 50)
 
 lenis.on("scroll", (data) => {
     const maxScroll = data.dimensions.scrollHeight - data.dimensions.height
