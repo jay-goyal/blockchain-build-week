@@ -109,6 +109,29 @@
   width: 120px;
 }
 
+.router img {
+  height: 65px;
+  width: 120px;
+}
+
+.router {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.spheron img {
+  height: 75px;
+  width: 140px;
+}
+
+.spheron {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
 
 @media (max-width: 800px) {
   .spons-dome {
