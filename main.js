@@ -73,7 +73,7 @@ lenis.on("scroll", (data) => {
 
 function raf(time) {
     lenis.raf(time)
-    setTimeout(() => requestAnimationFrame(raf), 16)
+    requestAnimationFrame(raf)
 }
 
 requestAnimationFrame(raf)
