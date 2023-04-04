@@ -9,14 +9,16 @@ window.lenis = lenis
 
 const scroller = document.getElementById("scroller")
 const cursorBox = document.getElementById("cursorBox")
+const squareone = document.getElementById("squareone")
 const cursor = document.getElementById("cursor")
 scroller.style.width = "0%"
 
 const isTouchDevice = "ontouchstart" in document.documentElement
 
 if (isTouchDevice) {
-  cursor.style.display = "hidden"
-  cursorBox.style.display = "hidden"
+    cursor.style.display = "hidden"
+    cursorBox.style.display = "hidden"
+    squareone.style.display = "hidden"
 }
 
 const debounce = (func, delay) => {
@@ -69,13 +71,11 @@ lenis.on("scroll", (data) => {
     const maxScroll = data.dimensions.scrollHeight - data.dimensions.height
     const scroll = data.animatedScroll
     scroller.style.width = `${(scroll * 100) / maxScroll}%`
-
-    // console.log(data)
 })
 
 function raf(time) {
     lenis.raf(time)
-    requestAnimationFrame(raf)
+    setTimeout(() => requestAnimationFrame(raf), 15)
 }
 
 requestAnimationFrame(raf)
