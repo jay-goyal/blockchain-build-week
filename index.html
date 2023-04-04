@@ -16,22 +16,23 @@
     >
         <!-- <script src="https://unpkg.com/kursor@0.1.6/dist/kursor.js"></script> -->
         <div
-            id="scroller"
-            class="h-1 top-0 sticky max-w-full z-30 bg-green-400"
+        id="scroller"
+        class="h-1 top-0 sticky max-w-full z-30 bg-green-400"
         ></div>
+        
         <div
             id="squareone"
             class="h-16 w-16 absolute top-0 left-0 bg-green-500 -translate-x-1/2 -translate-y-1/2 rotate-45 z-30"
         ></div>
         <div
             id="cursorBox"
-            class="h-8 w-8 border-green-500 border-2 rounded-full -translate-x-1/2 -translate-y-1/2 sticky z-20"
+            class="z-20 h-8 w-8 border-green-500 border-2 rounded-full -translate-x-1/2 -translate-y-1/2 sticky top-0 "
         ></div>
         <div
             id="cursor"
-            class="h-2 w-2 rounded bg-green-500 -translate-x-1/2 -translate-y-1/2 sticky z-20"
+            class="z-20 h-2 w-2 rounded bg-green-500 -translate-x-1/2 -translate-y-1/2 sticky top-0"
         ></div>
-        <div class="h-max w-full absolute z-30 select-none">
+        <div class="h-max w-full absolute z-40 select-none top-0">
             <div
                 class="flex flex-row gap-2 md:gap-6 lg:gap-16 justify-center my-2"
             >
@@ -81,9 +82,9 @@
         <!-- Landing section -->
         <div
             id="app"
-            class="h-screen w-full bg-neutral-900 grid place-items-center relative overflow-visible"
+            class="-top-12 h-screen w-full bg-neutral-900 grid place-items-center relative overflow-clip"
         >
-            <div class="flex flex-col gap-8 text-center z-20">
+            <div class="flex flex-col gap-8 text-center z-50">
                 <h1 class="text-gray-100 font-extrabold text-4xl text-blanka">
                     BITS Blockchain
                 </h1>
@@ -105,7 +106,6 @@
                 class="z-10 after:z-10 h-px w-px after:absolute after:h-72 blur-3xl after:w-72 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-green-600 absolute shadow-left opacity-50"
             ></div>
         </div>
-        <!-- <script type="module" src="/main.js"></script> -->
 
         <!-- About us -->
         <div

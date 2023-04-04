@@ -13,12 +13,12 @@ const squareone = document.getElementById("squareone")
 const cursor = document.getElementById("cursor")
 scroller.style.width = "0%"
 
-const isTouchDevice = "ontouchstart" in document.documentElement
+const isTouchDevice = navigator.maxTouchPoints > 0
 
 if (isTouchDevice) {
-    cursor.style.display = "hidden"
-    cursorBox.style.display = "hidden"
-    squareone.style.display = "hidden"
+    cursor.style.display = "none"
+    cursorBox.style.display = "none"
+    squareone.style.display = "none"
 }
 
 const debounce = (func, delay) => {
